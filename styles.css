@@ -1,0 +1,536 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #c4c4c4;
+    color: rgb(0, 0, 0);
+    height: 109px;
+    width: 100%;
+    padding: 28px 30px 28px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Alata', sans-serif;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+header nav a {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    font-family: 'Alata', sans-serif;
+    text-decoration: none;
+    color: black;
+    height: 49px;
+    width: 75px;
+}
+
+header nav a:hover {
+    color: #f2f2f2;
+}
+
+/* ------------------------------*/
+
+.about {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    height: 318px;
+    align-items: center;
+    justify-content: center;
+    gap: 125px;
+}
+
+.about img {
+    width: 247px;
+    height: 247px;
+    border-radius: 100%;
+}
+
+body section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 614px;
+    height: 186px;
+}
+
+body section h2 {
+    width: 95px;
+    height: 36px;
+    top: 66px;
+    left: 599px;
+    font-family: 'Alata', sans-serif;
+}
+
+body section p{
+    width: 614px;
+    height: 134px;
+    top: 117px;
+    left: 599px;
+    font-family: 'Alata', sans-serif;
+}
+
+/* ------------------------------*/
+.list-section {
+    padding: 20px;
+    width: 600px;
+    height: 249px;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    gap: 20px;
+}
+
+.list-section #hobbies{
+    font-size: 24px;
+    font-family: 'Alata', sans-serif;
+    white-space: nowrap;
+    display: block;
+    margin-left: auto;
+}
+
+.list-section #top5{
+    font-size: 24px;
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    display: block;
+    margin-right: auto;
+}
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 26px;
+}
+
+.card {
+    background: #e0e0e0;
+    padding: 15px;
+    width: 100px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Alata', sans-serif;
+    transition: background 0.3s ease-in-out;
+}
+
+.card img {
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+.card:hover img {
+    opacity: 1;
+}
+
+.card:hover span {
+    opacity: 0;
+}
+
+.card:hover {
+    transform: scale(1.3); 
+}
+
+.pai {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 289px;
+}
+
+/* ------------------------------*/
+
+.feedback{
+    width: 100%;
+    height: 236px;
+
+}
+.feedback div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 236px;
+    position: relative;
+    left: 136px;
+    justify-content: center;
+    font-family: 'Alata', sans-serif;
+}
+
+.feedback form input{
+    background-color: #ececec;
+    width: 1128px;
+    height: 56px;
+    position: relative;
+    left: 176px;
+    bottom: 10px;
+    border-style: none;
+    border-radius: 4px;
+    font-family: 'Alata', sans-serif;
+    padding-left: 10px;
+}
+
+.feedback form textarea{
+    background-color: #ececec;
+    width: 1128px;
+    height: 56px;
+    position: relative;
+    left: 176px;
+    top: 10px;
+    border-style: none;
+    border-radius: 4px;
+    font-family: 'Alata', sans-serif;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.feedback form input::placeholder{
+    font-family: 'Alata', sans-serif;
+    color: #454444;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.feedback form textarea::placeholder{
+    font-family: 'Alata', sans-serif;
+    color: #454444;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.feedback form button{
+    background-color: #f2f2f2;
+    width: 127px;
+    height: 56px;
+    position: relative;
+    left: 1149px;
+    top: 20px;
+    border-style: none;
+    border-radius: 4px;
+    font-family: 'Alata', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    color: #000000;
+}
+
+/* ------------------------------*/
+
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #c4c4c4;
+    position: relative;
+    top: 75px;
+    font-family: 'Alata', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    top: 10px;
+    justify-content: center;
+}
+
+.instagram-btn {
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    border: none;
+}
+
+
+.instagram-btn i {
+    font-size: 24px;
+    color: white;
+}
+
+
+.instagram-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.github-btn {
+    width: 50px;
+    height: 50px;
+    background: black; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.github-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.linkedin-btn {
+    width: 50px;
+    height: 50px;
+    background: black; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.linkedin-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+#contato{
+    position: relative;
+    left: 1000px;
+    top: 10px;
+    background-color: #f2f2f2;
+    width: 162px;
+    height: 38px;
+    border-style: none;
+    border-radius: 4px;
+    font-family: 'Alata', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 33px;
+    color: #000000;
+    white-space: nowrap;
+    padding-left: 10px;
+    text-decoration: none;
+    padding-top: 3px;
+}
+
+#menu-icon {
+    display: none;
+}
+
+/* ------------------------------*/
+
+@media screen and (max-width:430px){
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        overflow-x: hidden; /* Impede rolagem horizontal */
+    }
+
+    
+
+    header{
+        width: 400px;
+        height: 109px;
+        position: relative;
+    }
+
+    .about{
+        flex-direction: column;
+        gap: 0;
+        width: 100vw;
+        height: 700px;
+    }
+
+    .about img{
+        width: 247px;
+        position: relative;
+        bottom: 70px;
+        right: 20px;
+        gap: 0;
+    }
+    .about-text{
+        width: 403;
+        height: 242px;
+        gap: 0;
+        position: relative;
+        bottom: 100px;
+    }
+
+    .about-text p{
+        width: 350px;
+        position: relative;
+        left: 100px;
+        bottom: 150px;
+    }
+    .about-text h2{
+        width: 350px;
+        position: relative;
+        left: 100px;
+        bottom: 150px;
+    }
+
+    .pai{
+        flex-direction: column;
+        width: 430px;
+        height: 890px;
+    }
+
+
+    .card-container{
+        display: grid;
+        gap: 10px;
+        width: 100px;
+        height: 890px;
+        grid-template-columns: repeat(3, 1fr);
+        position: relative;
+        right: 230px;
+         
+    }
+
+    #hobbies{
+       position: relative;
+       left: -460px;
+       top: 15px;
+    }
+    
+
+
+    .feedback{
+        width: 384px;
+        height: 236px;
+        position: relative;
+        left: -150px;
+    }
+
+    .feedback div{
+        width: 384px;
+        height: 236px;
+        position: relative;
+        left: 160px;
+    }
+
+    .feedback form input{
+        width: 320px;
+        height: 56px;
+    }
+    
+    .feedback form textarea{
+        width: 320px;
+        height: 56px;
+    }
+
+    .feedback form button{
+        width: 79px;
+        height: 39px;
+        position: relative;
+        left: 295px;
+        top: 20px;
+    }
+
+    footer{
+        width: 400px;
+        height: 127px;
+        position: relative;
+        top: 75px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    footer > div{
+        position: relative;
+        top: 60px;
+    }
+
+    #contato{
+        position: relative;
+        left: -80px;
+        top: -50px;
+
+    }
+    
+    .instagram-btn, .github-btn, .linkedin-btn{
+        width: 32px;
+        height: 32px;
+        position: relative;
+        left:90px;
+        top: 10px;
+    }
+
+    #menu-icon {
+        display: block; /* Oculto inicialmente */
+        position: absolute;
+        right: 50px;
+        padding: 10px;
+        width: 40px; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    #itens{
+        position: relative;
+        top: 170%;
+        
+    }
+
+    .header > nav{
+        display: none;
+    }
+
+    .header > nav >a{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card:nth-child(4), .card:nth-child(5){
+        position: relative;
+        left: 60px;
+    }
+
+    .card:hover {
+        transform: scale(1.05); 
+    }
+}

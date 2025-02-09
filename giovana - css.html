@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Giovana Nogueira</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+</head>
+<body>
+    <header class="header">
+        <h2>Giovana Nogueira</h2>
+        <span class="material-symbols-outlined" id="menu-icon" onclick="clickMenu()">menu</span>
+        <nav id="itens">
+            <a href="index.html">Início</a>
+            <a>Link</a>
+            <a>Link</a>
+        </nav>
+    </header>
+    <section class="about">
+        <img src="giovana.jpeg" alt="Giovana Nogueira" width="200" height="200">
+        <section class="about-text">
+        <h2>Descrição:</h2>
+        <p>Prazer! Me chamo Giovana, tenho 25 anos e estou no 4º período de Sistemas 
+            de Informação na Universidade Federal Fluminense. Algumas coisas importantes
+            sobre mim é que eu amo gatos, sou apaixonada por música e estou estudando Alemão.
+            No momento eu moro em Niterói mas sou de São Cristóvão, onde moram meus pais e meus dois gatos.
+            Aqui em Niterói eu tenho uma gata chamada "Tacacá", que é a minha companheira de todas as horas.
+            Um ponto muito positivo de morar em Niterói e um fato sobre mim é que a praia fica mais perto, e eu 
+            amo ir para praia.
+        </p>
+        </section> 
+    </section>
+    <main>
+        <section class="pai">
+            <section class="list-section">
+                <h2 id="hobbies">Hobbies</h2>
+                <div class="card-container">
+                    <div class="card">Ouvir Música</div>
+                    <div class="card">Dormir</div>
+                    <div class="card">Comer</div>
+                    <div class="card">Assistir Formula 1</div>
+                    <div class="card">Ir para praia</div>
+                </div>
+            </section>
+
+            <section class="list-section">
+                <h2 id="top5">TOP 5 Álbuns da Taylor Swift</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <span>Folklore</span>
+                        <img src="Taylor_Swift_-_Folklore.png" alt="Imagem 1">
+                    </div>
+                    <div class="card">
+                        <span>The Tortured Poets Deparment</span>
+                        <img src="The-Anthology_Cover.webp" alt="Imagem 2">
+                    </div>
+                    <div class="card">
+                        <span>Evermore</span>
+                        <img src="evermore.jpg" alt="Imagem 3">
+                    </div>
+                    <div class="card">
+                        <span>Midnights</span>
+                        <img src="midnights.jpeg" alt="Imagem 4">
+                    </div>
+                    <div class="card">
+                        <span>Red</span>
+                        <img src="red.jpg" alt="Imagem 5">
+                    </div>
+                </div>
+            </section>
+        </section>  
+    </main>
+    <section class="feedback"> 
+        <div>
+            <h2>Feedbacks</h2>
+        </div>   
+        <form class="form">
+            <input type="text" placeholder="Digite seu nome aqui" class="input"> <br>
+            <textarea placeholder="Dê um feedback para esse desenvolvedor!" style="resize: none;" rows="5" cols="30"></textarea> <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section> 
+    <footer>
+        <div>
+            <a href="https://github.com/gsnog" target="_blank" class="github-btn">
+                <i class="fab fa-github"></i>
+            </a> 
+            <a href="https://www.linkedin.com/in/giovana-nogueira-043369273/" target="_blank" class="linkedin-btn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="instagram-btn">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="contato-giovana.html" target="_blank" id="contato">Entrar em contato</a> 
+        </div>          
+    </footer>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == "block") {
+                itens.style.display = "none";
+            } else {
+                itens.style.display = "block";
+            }
+        }
+    </script>  
+</body>
+</html>
