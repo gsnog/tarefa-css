@@ -4,16 +4,14 @@
     box-sizing: border-box;
 }
 
-
 body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background-color: #91b1c7c1;
 }
 
 header {
-    background-color: #3c769d83;
+    background-color: #c4c4c4;
     color: rgb(0, 0, 0);
     height: 109px;
     width: 100%;
@@ -42,13 +40,13 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #ffffff;
+    color: #f2f2f2;
 }
 
 /* ------------------------------*/
 
 .about {
-    background-color: #3c779dc1;
+    background-color: #f3f3f3;
     display: flex;
     flex-direction: row;
     width: 1440px;
@@ -166,7 +164,6 @@ body section p{
     justify-content: space-around;
     width: 100%;
     height: 289px;
-    background-color: #91b1c7c1;
 }
 
 /* ------------------------------*/
@@ -174,9 +171,6 @@ body section p{
 .feedback{
     width: 100%;
     height: 236px;
-    background-color: #91b1c7c1;
-    margin-bottom: 0;
-    padding-bottom: 0;
 
 }
 .feedback div{
@@ -254,16 +248,13 @@ body section p{
 
 footer{
     width: 100%;
-    height: 100px;
-    background-color: #91b1c7c1;
+    height: 70px;
+    background-color: #c4c4c4;
     position: relative;
     top: 75px;
     font-family: 'Alata', sans-serif;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-bottom: 0; 
-    padding-bottom: 0;
 }
 
 footer div {
@@ -375,7 +366,7 @@ footer div {
         margin: 0;
         padding: 0;
         width: 100vw;
-        overflow-x: hidden; 
+        overflow-x: hidden; /* Impede rolagem horizontal */
     }
 
     
@@ -510,7 +501,7 @@ footer div {
     }
 
     #menu-icon {
-        display: block; 
+        display: block; /* Oculto inicialmente */
         position: absolute;
         right: 50px;
         padding: 10px;
